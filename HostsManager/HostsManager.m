@@ -79,6 +79,7 @@ static HostsManager *manager = nil;
 }
 -(void)save{
     [[NSUserDefaults standardUserDefaults] setObject:_hosts forKey:Hosts];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 -(void)loadUrl{
     NSArray  *array = [[NSUserDefaults standardUserDefaults] objectForKey:Hosts];
