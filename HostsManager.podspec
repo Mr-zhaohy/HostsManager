@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     APP开发地址切换工具，可手动输入host，侧滑可进行更多操作.
                        DESC
 
-  s.homepage         = 'https://github.com/Mr-zhaohy'
+  s.homepage         = 'http://git.rd.com/mobility-ios/HostsManager.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mr_zhaohy' => 'zhy1@erongdu.com' }
   s.source           = { :git => 'http://git.rd.com/mobility-ios/HostsManager.git', :tag => s.version.to_s }

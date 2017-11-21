@@ -1,19 +1,24 @@
 //
-//  UIViewController+Accelerometer.h
-//  HostsChangeDemo
+//  AccelerometerManager.h
+//  HostsManager
 //
-//  Created by Mr_zhaohy on 2017/11/13.
-//  Copyright © 2017年 Mr_zhaohy. All rights reserved.
+//  Created by Mr_zhaohy on 2017/11/21.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <CoreMotion/CMMotionManager.h>
 
-@interface NSObject (Accelerometer)
+@interface AccelerometerManager : NSObject
 
 /**
- 激活速度传感器
+ 初始化
 
+ @return AccelerometerManager实例
+ */
++(instancetype)sharedManager;
+/**
+ 激活速度传感器
+ 
  @param accelerameter 触发阈值
  @param callBack 回调
  */

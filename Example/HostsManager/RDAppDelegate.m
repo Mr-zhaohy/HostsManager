@@ -9,7 +9,7 @@
 #import "RDAppDelegate.h"
 #import <HostsManager/HostsManager.h>
 #import <HostsManager/CustomHostsView.h>
-#import <HostsManager/NSObject+Accelerometer.h>
+#import <HostsManager/AccelerometerManager.h>
 
 @interface RDAppDelegate()<CustomHostsViewDelegate>
 @end
@@ -37,7 +37,7 @@
 -(void)startAccelerometer{
     CustomHostsView *custonView = [[CustomHostsView alloc]init];
     custonView.delegate = self;
-    [self startAccelerometer:4.0 withHandel:^(BOOL active) {
+    [[AccelerometerManager sharedManager] startAccelerometer:4.0 withHandel:^(BOOL active) {
         if (active) {
             [custonView show];
         }
