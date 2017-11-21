@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HostsManager_Example' do
+  pod 'HostsManager', :path => '../'
+
+  target 'HostsManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
