@@ -10,42 +10,42 @@
 #### HostsManager - 地址管理器
 - 创建管理器单例
 <br >`+(instancetype)shared;`
-e.g.
-`[HostsManager shared];`
+<br >e.g.
+<br >`[HostsManager shared];`
 
 - 新增一个url
-`-(void)addHostsUrl:(NSString *)url default:(BOOL)isDefault;`
-e.g.
-`[HostsManager shared] addHostsUrl:@"http://www.gitlab.com/" default:YES];`
+<br >`-(void)addHostsUrl:(NSString *)url default:(BOOL)isDefault;`
+<br >e.g.
+<br >`[HostsManager shared] addHostsUrl:@"http://www.gitlab.com/" default:YES];`
 
 - 删除一个url
-`-(void)removeHostsUrl:(NSString *)url;`
-e.g.
-`[HostsManager shared] removeHostsUrl:@"http://www.gitlab.com/"];`
+<br >`-(void)removeHostsUrl:(NSString *)url;`
+<br >e.g.
+<br >`[HostsManager shared] removeHostsUrl:@"http://www.gitlab.com/"];`
 
 ***
 ##### CustomHostsView - 自定义的切换视图
 ![Alt text](./IMG_0033.PNG)
-侧滑支持更多操作
+<br >侧滑支持更多操作
 
-1. 初始化
-`CustomHostsView *custonView = [[CustomHostsView alloc]init];`
+- 初始化
+<br >`CustomHostsView *custonView = [[CustomHostsView alloc]init];`
 
-2. 设置代理
-`custonView.delegate = self;`
+- 设置代理
+<br >`custonView.delegate = self;`
 
-3. 展示视图（**默认全屏**）
-`[custonView show];`
+- 展示视图（**默认全屏**）
+<br >`[custonView show];`
 
-4. 隐藏/消失视图
-`[custonView dismiss]; `
+- 隐藏/消失视图
+<br >`[custonView dismiss]; `
 
 ***
 #### CustomHostsView - 代理方法
-设置了一个默认地址
-`-(void)setDefaultWithUrl:(NSString *)url;`
-自定义视图消失
-`-(void)customHostsViewDismiss;`
+- 设置了一个默认地址
+<br >`-(void)setDefaultWithUrl:(NSString *)url;`
+- 自定义视图消失
+<br >`-(void)customHostsViewDismiss;`
 
 ## Installation
 
