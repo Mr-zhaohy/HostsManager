@@ -9,7 +9,7 @@
 ***
 #### HostsManager - 地址管理器
 - 创建管理器单例
-`+(instancetype)shared;`
+<br >`+(instancetype)shared;`
 e.g.
 `[HostsManager shared];`
 
