@@ -25,7 +25,7 @@
 
 ***
 ##### CustomHostsView - 自定义的切换视图
-![Alt text](http://git.rd.com/mobility-ios/HostsManager/blob/master/IMG_0033.PNG)
+![Alt text](https://github.com/Mr-zhaohy/HostsManager/blob/master/IMG_0033.PNG?raw=true)
 <br >侧滑支持更多操作
 
 - 初始化
