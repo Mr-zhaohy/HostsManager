@@ -8,17 +8,17 @@
 ### Example
 ***
 #### HostsManager - 地址管理器
-1. 创建管理器单例
+- 创建管理器单例
 `+(instancetype)shared;`
 e.g.
 `[HostsManager shared];`
 
-2. 新增一个url
+- 新增一个url
 `-(void)addHostsUrl:(NSString *)url default:(BOOL)isDefault;`
 e.g.
 `[HostsManager shared] addHostsUrl:@"http://www.gitlab.com/" default:YES];`
 
-3. 删除一个url
+- 删除一个url
 `-(void)removeHostsUrl:(NSString *)url;`
 e.g.
 `[HostsManager shared] removeHostsUrl:@"http://www.gitlab.com/"];`
