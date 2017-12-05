@@ -25,7 +25,7 @@
 
 ***
 ##### CustomHostsView - 自定义的切换视图
-![Alt text](./IMG_0033.PNG)
+![Alt text](http://img.blog.csdn.net/20141121162048979?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhb2thaXFpYW5nMTk5Mg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 <br >侧滑支持更多操作
 
 - 初始化
