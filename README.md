@@ -9,6 +9,41 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+###### HostsManager - 地址管理器
+1.创建管理器单例
++ (instancetype)shared;
+e.g.
+[HostsManager shared];
+
+2.新增一个url
+- (void)addHostsUrl:(NSString *)url default:(BOOL)isDefault;
+e.g.
+[HostsManager shared] addHostsUrl:@"http://www.gitlab.com/" default:YES];
+
+3.删除一个url
+- (void)removeHostsUrl:(NSString *)url;
+e.g.
+[HostsManager shared] removeHostsUrl:@"http://www.gitlab.com/"];
+
+###### CustomHostsView - 自定义的切换视图
+1.初始化
+CustomHostsView *custonView = [[CustomHostsView alloc]init];
+
+2.设置代理
+custonView.delegate = self;
+
+展示视图（默认全屏）
+[custonView show];
+
+3.隐藏/消失视图
+[custonView dismiss];
+
+###### CustomHostsView - 代理方法
+设置了一个默认地址
+-(void)setDefaultWithUrl:(NSString *)url;
+自定义视图消失
+-(void)customHostsViewDismiss;
+
 ## Requirements
 
 ## Installation
