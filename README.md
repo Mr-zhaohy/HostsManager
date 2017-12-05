@@ -32,7 +32,7 @@ e.g.
 `CustomHostsView *custonView = [[CustomHostsView alloc]init];`
 
 2. 设置代理
-`custonView.  = self;`
+`custonView.delegate = self;`
 
 3. 展示视图（**默认全屏**）
 `[custonView show];`
