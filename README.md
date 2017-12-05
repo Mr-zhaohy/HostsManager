@@ -5,56 +5,54 @@
 [![License](https://img.shields.io/cocoapods/l/HostsManager.svg?style=flat)](http://cocoapods.org/pods/HostsManager)
 [![Platform](https://img.shields.io/cocoapods/p/HostsManager.svg?style=flat)](http://cocoapods.org/pods/HostsManager)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-###### HostsManager - 地址管理器
-1.创建管理器单例
-+ (instancetype)shared;
+### Example
+***
+#### HostsManager - 地址管理器
+1. 创建管理器单例
+`+(instancetype)shared;`
 e.g.
-[HostsManager shared];
+`[HostsManager shared];`
 
-2.新增一个url
-- (void)addHostsUrl:(NSString *)url default:(BOOL)isDefault;
+2. 新增一个url
+`-(void)addHostsUrl:(NSString *)url default:(BOOL)isDefault;`
 e.g.
-[HostsManager shared] addHostsUrl:@"http://www.gitlab.com/" default:YES];
+`[HostsManager shared] addHostsUrl:@"http://www.gitlab.com/" default:YES];`
 
-3.删除一个url
-- (void)removeHostsUrl:(NSString *)url;
+3. 删除一个url
+`-(void)removeHostsUrl:(NSString *)url;`
 e.g.
-[HostsManager shared] removeHostsUrl:@"http://www.gitlab.com/"];
+`[HostsManager shared] removeHostsUrl:@"http://www.gitlab.com/"];`
 
-###### CustomHostsView - 自定义的切换视图
-1.初始化
-CustomHostsView *custonView = [[CustomHostsView alloc]init];
+***
+##### CustomHostsView - 自定义的切换视图
+![Alt text](./IMG_0033.PNG)
+侧滑支持更多操作
 
-2.设置代理
-custonView.delegate = self;
+1. 初始化
+`CustomHostsView *custonView = [[CustomHostsView alloc]init];`
 
-展示视图（默认全屏）
-[custonView show];
+2. 设置代理
+`custonView.  = self;`
 
-3.隐藏/消失视图
-[custonView dismiss];
+3. 展示视图（**默认全屏**）
+`[custonView show];`
 
-###### CustomHostsView - 代理方法
+4. 隐藏/消失视图
+`[custonView dismiss]; `
+
+***
+#### CustomHostsView - 代理方法
 设置了一个默认地址
--(void)setDefaultWithUrl:(NSString *)url;
+`-(void)setDefaultWithUrl:(NSString *)url;`
 自定义视图消失
--(void)customHostsViewDismiss;
-
-## Requirements
+`-(void)customHostsViewDismiss;`
 
 ## Installation
-
-HostsManager is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'HostsManager'
 ```
-
+---
 ## Author
 
 Mr_zhaohy, zhy1@erongdu.com
@@ -62,3 +60,4 @@ Mr_zhaohy, zhy1@erongdu.com
 ## License
 
 HostsManager is available under the MIT license. See the LICENSE file for more info.
+
